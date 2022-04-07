@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dd-trace": "^2.4.1",
     "koa": "^1.2.5"
   },
   "devDependencies": {
