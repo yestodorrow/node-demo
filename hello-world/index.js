@@ -1,3 +1,4 @@
+const tracer = require('dd-trace').init();
 var koa = require('koa');
 var app = koa();
 
