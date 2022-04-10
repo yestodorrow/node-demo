@@ -2,8 +2,8 @@
 
 ```bash
 # 项目结构
--web   node的静态文件服务器
--server  node的接口服务器
+-web   node的静态文件服务器---首页为观测云的静态页面，首页会get请求server端的数据
+-server  node的接口服务器---把请求的参数返回
 
 # node环境安装
 方法1：安装nvm---》nvm use
@@ -19,6 +19,7 @@
 npm run start
 ```
 静态文件：浏览器访问 http://localhost:3000 (端口修改需要在在index.js中修改listen的端口即可)
+node转发：浏览器访问 http://localhost:3001 (端口修改需要在在index.js中修改listen的端口即可)
 
 ## 发布
 
