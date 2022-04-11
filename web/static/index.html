@@ -29,7 +29,7 @@
     })
 </script>
 <script>
-  let domain="http://39.105.142.46:3001",path="/requesturl",params="?a="+Math.floor(Math.random()*1000)+"&b="+Math.floor(Math.random()*500)
+  let domain="http://localhost:3001",path="/requesturl",params="?a="+Math.floor(Math.random()*1000)+"&b="+Math.floor(Math.random()*500)
   axios.get(domain+path+params).then(res=>{
     console.log(res)
   })
