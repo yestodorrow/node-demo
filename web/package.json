@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js --require dd-trace/init",
+    "start": "node --require dd-trace/init index.js",
     "test": "--require dd-trace/init",
     "test1": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,10 +12,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dd-trace": "^2.4.1",
+    "dd-trace": "^2.5.0",
+    "dotenv": "^16.0.0",
     "koa": "^2.13.4",
     "koa-body": "^4.2.0",
     "koa-cors": "^0.0.16",
+    "koa-log4": "^2.3.2",
     "koa-static": "^5.0.0"
   },
   "devDependencies": {
