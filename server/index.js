@@ -9,7 +9,7 @@ console.log(process.env,33)
 app.use(cors());
 const { logger, accessLogger } = require('./logger');
 
-app.use(accessLogger());
+// app.use(accessLogger());
 
 app.use((ctx)=>{
     console.log(ctx.request.url);
