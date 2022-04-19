@@ -9,7 +9,7 @@ const { logger, accessLogger } = require('./logger');
 // tracer.use('koa', {
 //     service: 'pg-cluster'
 //   })
-app.use(accessLogger());
+// app.use(accessLogger());
 const static = require('koa-static');
 app.use(static(__dirname + '/static'));
 
