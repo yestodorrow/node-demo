@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --require dd-trace/init index.js",
+    "start": "export DD_TRACE_AGENT_URL=http://localhost:9529 DD_TRACE_AGENT_PORT=9529 DD_AGENT_HOST=localhost && node --require dd-trace/init index.js",
     "test": "--require dd-trace/init",
     "test1": "echo \"Error: no test specified\" && exit 1"
   },
